@@ -13,10 +13,10 @@ import com.org.msrouter_api.metamap.*
 
 
 /**
- * @ClassName: RTRouter
+ * @ClassName: MSRouter
  * @Description: router
  * @Author: ms
- * @Date: 2020-01-02 16:57
+ * @Date: 2020-07-02 16:57
  */
 public class MSRouter {
 
@@ -25,7 +25,6 @@ public class MSRouter {
         private lateinit var application: Application
         public fun init(context: Application){
             ARouter.init(context)
-            //设置默认ILogger(base RTLogger)，外部可通过接口覆盖
             application = context
             //加载路由map
             loadServiceMap(context)
@@ -37,9 +36,6 @@ public class MSRouter {
 
         public fun openDebug() {
             ARouter.openDebug()
-        }
-        public fun printStackTrace() {
-            ARouter.printStackTrace()
         }
 
         // 使用自己的日志工具打印日志

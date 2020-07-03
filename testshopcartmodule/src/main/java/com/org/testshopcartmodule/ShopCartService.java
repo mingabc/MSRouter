@@ -39,20 +39,4 @@ public final class ShopCartService implements IProvider {
     }
 
 
-    private boolean verifyData(HashMap<String, Object> map ) {
-        String token = (String) map.get("token");
-        String productId = (String) map.get("productId");
-        String count = (String) map.get("count");
-
-        if (token.isEmpty() || productId.isEmpty() || count.isEmpty()) {
-            return false;
-        }
-        return true;
-    }
-
-
-
-
-
-
 }
