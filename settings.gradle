@@ -1,0 +1,8 @@
+rootProject.name='MSRouter'
+include ':app'
+include ':msrouter-annotation'
+include ':msrouter-compiler'
+include ':msrouter-api'
+include ':testshopcartmodule'
+include ':testproductmodule'
+include ':testaccountmodule'
